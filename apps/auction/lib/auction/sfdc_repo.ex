@@ -31,17 +31,19 @@ defmodule Auction.SfdcRepo do
 
   defp build_where_clause(target_attributes) do
     target_keys = Map.keys(target_attributes)
-    where_phrase_list = []
 
     where_phrase_list =
     for (target_key <- target_keys) do
-      sfdc_key = @sfdc_key_map[target_key]
-      target_value = target_attributes[target_key]
-      where_phrase = "#{sfdc_key} = '#{target_value}'"
-      [where_phrase | where_phrase_list]
+      [build_where_phrase(target_attributes, target_key) | []]
     end
 
     " WHERE " <>  Enum.join(where_phrase_list, " AND ")
+  end
+
+  def build_where_phrase(target_attributes, target_key) do
+    sfdc_key = @sfdc_key_map[target_key]
+    target_value = target_attributes[target_key]
+    "#{sfdc_key} = '#{target_value}'"
   end
 
 

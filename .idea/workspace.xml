@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a7b1615-e6af-4f09-abe3-a4583d45ad46" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/auction/config/postgres_config.exs.template" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/auction/config/sfdc_config.exs.template" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/auction/lib/auction/sfdc_repo.ex" beforeDir="false" afterPath="$PROJECT_DIR$/apps/auction/lib/auction/sfdc_repo.ex" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/apps/auction/assets/node_modules/phoenix/" />
@@ -70,7 +68,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/auction/config/sfdc_config.exs.template">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
@@ -79,11 +77,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/apps/auction/lib/auction/sfdc_repo.ex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="42" selection-start-line="42" selection-end-line="42" />
+            <state relative-caret-position="255">
+              <caret line="37" column="7" lean-forward="true" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -163,10 +161,10 @@
         <option value="$PROJECT_DIR$/apps/auction/lib/auction/repo.ex" />
         <option value="$PROJECT_DIR$/apps/auction/lib/auction/application.ex" />
         <option value="$PROJECT_DIR$/apps/auction/lib/auction.ex" />
-        <option value="$PROJECT_DIR$/apps/auction/lib/auction/sfdc_repo.ex" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/apps/auction/config/auction/postgres_config.exs.template" />
         <option value="$PROJECT_DIR$/apps/auction/config/sfdc_config.exs.template" />
+        <option value="$PROJECT_DIR$/apps/auction/lib/auction/sfdc_repo.ex" />
       </list>
     </option>
   </component>
@@ -304,6 +302,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/apps/auction/config" />
@@ -346,12 +345,12 @@
       <option name="presentableId" value="Default" />
       <updated>1563119034215</updated>
       <workItem from="1563119037650" duration="21280000" />
-      <workItem from="1563168725133" duration="3216000" />
+      <workItem from="1563168725133" duration="4758000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24496000" />
+    <option name="totallyTimeSpent" value="26038000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
@@ -359,11 +358,11 @@
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="Designer" order="1" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.49880096" visible="true" weight="0.19402985" />
+      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49880096" visible="true" weight="0.19402985" />
       <window_info anchor="bottom" id="Log Viewer" order="0" />
       <window_info anchor="bottom" id="SOQL Query" order="1" />
       <window_info anchor="bottom" id="Database Changes" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="3" visible="true" weight="0.27553192" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.21276596" />
       <window_info anchor="bottom" id="Version Control" order="4" />
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Anonymous Apex" order="6" />
@@ -484,13 +483,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/auction/lib/auction/sfdc_repo.ex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -537,6 +529,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/auction/lib/auction/sfdc_repo.ex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="37" column="7" lean-forward="true" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
         </state>
       </provider>
     </entry>

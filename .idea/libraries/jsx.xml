@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="jsx" type="mix">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/jsx/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/consolidated" />
+      <root url="file://$PROJECT_DIR$/_build/test/lib/jsx/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/test/consolidated" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/deps/jsx/src" />
+    </SOURCES>
+  </library>
+</component>

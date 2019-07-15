@@ -1,0 +1,11 @@
+use Mix.Config
+
+config :auction, Auction.Repo, [
+  database: "auction",
+  username: "postgres",
+  password: "XXXXXXXXXXXXX",
+  hostname: "localhost",
+  port: 5432
+]
+
+

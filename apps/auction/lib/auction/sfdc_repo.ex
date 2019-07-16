@@ -30,12 +30,11 @@ defmodule Auction.SfdcRepo do
   end
 
   defp build_where_clause(%{} = target_attributes) do
-    target_keys = Map.keys(target_attributes)
     where_phrase_list = build_where_phrase_list(target_attributes, Map.keys(target_attributes))
     build_where_clause(where_phrase_list)
   end
 
-  defp build_where_clause(where_phrase_list = []) do
+  defp build_where_clause(_where_phrase_list = []) do
     ""
   end
 
@@ -45,7 +44,6 @@ defmodule Auction.SfdcRepo do
 
   def build_where_phrase_list(%{} = target_attributes, target_keys) do
     where_phrase_list = []
-
     for (target_key <- target_keys) do
       where_phrase_list = [build_where_phrase(target_attributes, target_key) | where_phrase_list]
     end

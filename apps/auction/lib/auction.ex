@@ -14,5 +14,11 @@ defmodule Auction do
     |> @repo.insert()
   end
 
+  def update_item(%Auction.Item{} = item, updates) do
+    item
+    |> Item.changeset(updates)
+    |> @repo.update()
+  end
+
   def delete_item(%Auction.Item{} = item), do: @repo.delete(item)
 end

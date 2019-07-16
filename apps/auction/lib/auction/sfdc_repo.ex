@@ -43,9 +43,11 @@ defmodule Auction.SfdcRepo do
     " WHERE " <> Enum.join(where_phrase_list, " AND ")
   end
 
-  def build_where_phrase_list(%{} = target_attributes, target_keys, where_phrase_list \\ []) do
+  def build_where_phrase_list(%{} = target_attributes, target_keys) do
+    where_phrase_list = []
+
     for (target_key <- target_keys) do
-      [build_where_phrase(target_attributes, target_key) | where_phrase_list]
+      where_phrase_list = [build_where_phrase(target_attributes, target_key) | where_phrase_list]
     end
   end
 

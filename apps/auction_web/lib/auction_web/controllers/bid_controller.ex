@@ -11,9 +11,18 @@ defmodule AuctionWeb.BidController do
           "item_id" => item_id
         }
       ) do
-    user_id = connection.assigns.current_user.id
-    case Auction.insert_bid(%{amount: amount, item_id: item_id, user_id: user_id}) do
+    current_user = connection.assigns.current_user
+    case Auction.insert_bid(%{amount: amount, item_id: item_id, user_id: current_user.id}) do
       {:ok, bid} ->
+        html = Phoenix.View.render_to_string(
+          AuctionWeb.BidView,
+          "bid.html",
+          [
+            bid: bid,
+            username: current_user.username
+          ]
+        )
+        AuctionWeb.Endpoint.broadcast("item:#{item_id}", "new_bid", %{body: html})
         redirect(connection, to: Routes.item_path(connection, :show, bid.item_id))
 
       {:error, bid} ->
@@ -23,5 +32,5 @@ defmodule AuctionWeb.BidController do
   end
 
   defp require_logged_in_user(connection, _options),
-    dp: connection
+       do: connection
 end

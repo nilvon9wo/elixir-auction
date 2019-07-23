@@ -44,7 +44,8 @@ defmodule Auction.SfdcRepo do
 
   def build_where_phrase_list(%{} = target_attributes, target_keys) do
     where_phrase_list = []
-    for (target_key <- target_keys) do
+
+    for target_key <- target_keys do
       where_phrase_list = [build_where_phrase(target_attributes, target_key) | where_phrase_list]
     end
   end
@@ -56,10 +57,11 @@ defmodule Auction.SfdcRepo do
   end
 
   defp to_items(records) do
-    result_list = records
-                  |> Enum.to_list()
+    result_list =
+      records
+      |> Enum.to_list()
 
-    for (sfdc_item <- result_list) do
+    for sfdc_item <- result_list do
       to_item(sfdc_item)
     end
   end

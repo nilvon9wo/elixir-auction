@@ -2,7 +2,7 @@
 defmodule Sfdc.Wrapper do
   def get_client! do
     {:ok, %{instance_url: instance_url} = oauth_response} = get_token!()
-    latest_version = fetch_latest_version(instance_url);
+    latest_version = fetch_latest_version(instance_url)
     ExForce.build_client(oauth_response, api_version: latest_version)
   end
 

@@ -20,7 +20,9 @@ erl_crash.dump
 *.ez
 
 /.idea/
-/apps/auction/config/postgres_config.exs
+/apps/auction/config/dev.exs
+/apps/auction/config/prod.exs
 /apps/auction/config/sfdc_config.exs
+/apps/auction/config/test.exs
 /apps/auction_web/assets/node_modules/
 /IlluminatedCloud/

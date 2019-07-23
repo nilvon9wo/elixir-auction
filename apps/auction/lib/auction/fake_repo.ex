@@ -25,7 +25,7 @@ defmodule Auction.FakeRepo do
   def all(Item), do: @items
 
   def get!(Item, id) do
-    has_target_id? = fn(item) -> item.id == id end
+    has_target_id? = fn item -> item.id == id end
     Enum.find(@items, has_target_id?)
   end
 
@@ -36,7 +36,7 @@ defmodule Auction.FakeRepo do
   defp has_target_attributes?(target_attributes, item) do
     target_keys = Map.keys(target_attributes)
 
-    has_target_attribute? = fn(key) ->
+    has_target_attribute? = fn key ->
       Map.get(item, key) === target_attributes[key]
     end
 

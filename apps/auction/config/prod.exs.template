@@ -1,9 +1,19 @@
 use Mix.Config
-config :auction, ecto_repos: [Auction.Repo]
+
 config :auction, Auction.Repo, [
   database: "auction",
   username: "postgres",
-  password: "ELIXalami123!!!",
+  password: "XXXXXXXXXXXXXXX",
   hostname: "localhost",
   port: 5432
 ]
+
+config :auction, sfdc_credentials: %{
+  :login_path => "https://login.salesforce.com",
+  :username => "XXXXXXXXXXXXXXX",
+  :password => "XXXXXXXXXXXXXXX",
+  :security_token => "XXXXXXXXXXXXXXX",
+  :client_id => "XXXXXXXXXXXXXXX",
+  :client_secret => "XXXXXXXXXXXXXXX"
+}
+

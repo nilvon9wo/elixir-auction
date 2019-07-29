@@ -12,4 +12,4 @@
         mix ecto.create
         mix ecto.migrate
 
-
+        Sample data can be found in the data/samples directory.

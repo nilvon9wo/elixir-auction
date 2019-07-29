@@ -16,10 +16,9 @@ config :logger, level: :info
 config :auction,
   sfdc_credentials: %{
     :login_path => "https://login.salesforce.com",
-    :username => "bmk@elixir.org",
-    :password => "ELIXalami123!!!",
-    :security_token => "e9mLQXQh2w2r17k8P9F65OZZ",
-    :client_id =>
-      "3MVG96_7YM2sI9wT.fe1gBsUHw3zuJJA7M0d.Fls4WmTUJhbQZXi_PKVsuYppfZMF_BEQ.eByppmQ1JTc_m7o",
-    :client_secret => "9135758425AD7D0D5EFD971B89D5860616A48C92AA2DD8644144406A0D37FD34"
+    :username => "XXXXXXXXXXXXXXX",
+    :password => "XXXXXXXXXXXXXXX",
+    :security_token => "XXXXXXXXXXXXXXX",
+    :client_id => "XXXXXXXXXXXXXXX",
+    :client_secret => "XXXXXXXXXXXXXXX"
   }

@@ -49,5 +49,17 @@
     <orderEntry type="library" name="benchee" level="project" />
     <orderEntry type="library" name="nimble_parsec" level="project" />
     <orderEntry type="library" name="stream_data" level="project" />
+    <orderEntry type="library" name="timex" level="project" />
+    <orderEntry type="library" name="tzdata" level="project" />
+    <orderEntry type="library" name="combine" level="project" />
+    <orderEntry type="library" name="benchfella" level="project" />
+    <orderEntry type="library" name="dialyxir" level="project" />
+    <orderEntry type="library" name="idna" level="project" />
+    <orderEntry type="library" name="mimerl" level="project" />
+    <orderEntry type="library" name="certifi" level="project" />
+    <orderEntry type="library" name="metrics" level="project" />
+    <orderEntry type="library" name="ssl_verify_fun" level="project" />
+    <orderEntry type="library" name="unicode_util_compat" level="project" />
+    <orderEntry type="library" name="parse_trans" level="project" />
   </component>
 </module>

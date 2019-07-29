@@ -8,6 +8,7 @@ defmodule AuctionWeb.GlobalHelpers do
 
   def formatted_datetime(datetime) do
     datetime
-    |> Timex.format!("{YYYY}-{0M}-{0D} {h12}:{m}:{s}{am}")
+    # FIXME: https://github.com/bitwalker/timex/issues/345
+    # |> Timex.format!("{YYYY}-{0M}-{0D} {h12}:{m}:{s}{am}")
   end
 end

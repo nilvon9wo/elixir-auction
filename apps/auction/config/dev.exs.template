@@ -1,5 +1,13 @@
 use Mix.Config
 
+config :auction, Auction.Repo, [
+  database: "auction",
+  username: "postgres",
+  password: "XXXXXXXXXXXXXXX",
+  hostname: "localhost",
+  port: 5432
+]
+
 config :auction, sfdc_credentials: %{
   :login_path => "https://login.salesforce.com",
   :username => "XXXXXXXXXXXXXXX",
@@ -8,11 +16,3 @@ config :auction, sfdc_credentials: %{
   :client_id => "XXXXXXXXXXXXXXX",
   :client_secret => "XXXXXXXXXXXXXXX"
 }
-
-config :auction, Auction.Repo, [
-  database: "auction",
-  username: "postgres",
-  password: "XXXXXXXXXXXXXXX",
-  hostname: "localhost",
-  port: 5432
-]
